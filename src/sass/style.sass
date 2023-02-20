@@ -1,0 +1,179 @@
+@import "vars"
+    
+    
+*
+    box-sizing: border-box
+    
+
+body
+    background-color: #0C0C12
+    font-family: 'Inter', sans-serif
+
+
+p
+    margin: 0px
+
+.container
+    max-width: 1470px
+    width: 96%
+    margin: auto
+
+button
+    background-color: $orange2
+    border-radius: 6px
+    padding: 20px 30px
+
+
+a
+    text-decoration: none
+    color: #fff
+    font-weight: 400
+    position: relative
+    &::after
+        content: ''
+        height: 1px
+        width: 0%
+        background-color: $orange1
+        position: absolute
+        left: 0
+        bottom: -5px
+        transition: 0.1s
+    &:hover
+        &::after
+            width: 100%
+
+
+
+
+//1280px - mobile version
+
+////////////////////////////////////////////////////////////////////////
+                            //header
+
+.header
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    z-index: 999
+    &-wrap
+        padding: 30px 0px
+        display: flex
+        justify-content: space-between
+        transition: all 0.4s ease-in-out
+
+    
+.shrink
+    transition: all 0.4s ease-in-out
+    padding: 12px 0px
+
+.header
+    background-color: #0C0C12
+    &-menu
+        display: flex
+        align-items: center
+        &__logo
+            margin-right: 60px
+            max-width: 113px
+            width: 100%
+            transition: 0.5s
+            img
+                width: 100%
+        &__links
+            a
+                margin-right: 30px
+
+
+.shrink-logo
+    width: 12%
+    
+
+
+.header
+    &-feedback
+        display: flex
+        flex-direction: row-reverse
+        align-items: center
+        a
+            margin-left: 30px
+        &__button
+            margin-left: 30px
+            padding: 11px 25px
+            color: $orange2
+            display: flex
+            flex-direction: row
+            align-items: center           
+            border: 1px solid #E09B37
+            border-radius: 6px
+            background: none
+            cursor: pointer
+            text-align: left
+            &:hover
+                transition: 0.2s
+                background: rgba(255, 255, 255, 0.1)
+            
+
+//header-button-styles
+    
+.header-button__icon
+    margin-right: 12px
+
+.header-button__title
+    font-weight: 700
+    font-size: 16px
+    margin-bottom: 3px
+
+.header-button__subtitle
+    color: #fff
+    font-size: 12px
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////
+                                    //main
+
+.main-wrap
+    position: absolute
+    color: #fff
+    margin-top: 200px
+
+
+.main-info__bestTag
+    position: absolute
+    top: -25px
+    left: 340px
+    
+.main-info__sprayTag
+    position: absolute
+    top: 30px
+    left: 264px
+
+.main
+    height: 5000px
+    &-info
+        &__title
+            margin-bottom: 20px
+            span
+                font-size: 60px
+                line-height: 70px
+                font-weight: 700
+                
+        &__subtitle
+            margin-bottom: 48px
+            span
+                font-size: 18px
+                line-height: 24px
+                font-weight: 400
+        &__button
+            color: #fff
+            font-weight: 700
+            font-size: 18px
+            cursor: pointer
+            &:hover
+                transition: 0.2s
+                background: #CA8C31
+                
+
+    
