@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rcore</title>
+    <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/animate.min.css">
+    <link rel="stylesheet" href="src/css/slick.css">
+    <link rel="stylesheet" href="src/css/slick-theme.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -43,6 +48,11 @@
                         <a href="" class="feedback-links__Faqs">FAQs</a>
                         <a href="" class="feedback-links__Reviews">Reviews</a>                   
                     </div>
+                    <button class="header-hamburger__button">
+                        <div class="hamburger-line1"></div>
+                        <div class="hamburger-line2"></div>
+                        <div class="hamburger-line3"></div>
+                    </button>
                 </div>
             </div>
         </div>
@@ -63,7 +73,7 @@
                         </div>
 
                         <div class="main-info__title">
-                            <span>Unique & high quality <br>
+                            <span>Unique & high quality 
                             <span class="main-info__greyTitle">FiveM scripts</span>
                         </div>
                         <div class="main-info__subtitle">
@@ -76,8 +86,204 @@
                             Explore scripts
                         </button>
                     </div>
+                    <div class="main-slider__arrows">
+                        <div class="main-slider__prevArrow">
+                            <img src="src/img/arrowPrev.svg" alt="">
+                        </div>
+                        <div class="main-slider__nextArrow">
+                            <img src="src/img/arrowNext.svg" alt="">
+                        </div>
+                    </div>
                     <div class="main-slider">
                         
+                        <div class="main-slider__itemBox">  
+                            <div class="main-slider__item">
+                                <div class="main-slider__stars">
+                                    <img src="src/img/star.png" alt="">
+                                    <img src="src/img/star.png" alt="">
+                                    <img src="src/img/star.png" alt="">
+                                    <img src="src/img/star.png" alt="">
+                                    <img src="src/img/star.png" alt="">
+                                </div>
+                                <div class="main-slider__text">
+                                    <span>“If you are having second thoughts about "should I buy their products", buy it. Because I thought about that too, and ended up purchasing most of their scripts.”</span>
+                                </div>
+                                <div class="main-slider__user">
+                                    <div class="main-slider__userImg">
+                                        <img src="src/img/userImg1.png" alt="">
+                                    </div>
+                                    <div class="main-slider__userBox">
+                                        <div class="main-slider__userName">
+                                            <p>Tudounaozi</p>
+                                        </div>
+                                        <div class="main-slider__link">
+                                            <a href="">Read the review on our discord</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-slider__itemBox">
+                            <div class="main-slider__item">
+                                <div class="main-slider__stars">
+                                    <img src="src/img/star.png" alt="">
+                                    <img src="src/img/star.png" alt="">
+                                    <img src="src/img/star.png" alt="">
+                                    <img src="src/img/star.png" alt="">
+                                    <img src="src/img/star.png" alt="">
+                                </div>
+                                <div class="main-slider__text">
+                                    <span>“Lorem ipsum dolor sit ames vel quam eam et, eum cupiditate reiciendis eaque excepturi repellendus quod possimus! Minus, iure exercitationem quas aliquid quaerat magni mollitia tempora voluptatem ipsa illum laborum quis neque ratione?”</span>
+                                </div>
+                                <div class="main-slider__user">
+                                    <div class="main-slider__userImg">
+                                        <img src="src/img/userImg1.png" alt="">
+                                    </div>
+                                    <div class="main-slider__userBox">
+                                        <div class="main-slider__userName">
+                                            <p>Tudounaozi</p>
+                                        </div>
+                                        <div class="main-slider__link">
+                                            <a href="">Read the review on our discord</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-slider__itemBox">
+                            <div class="main-slider__item">
+                                <div class="main-slider__stars">
+                                    <img src="src/img/star.png" alt="">
+                                    <img src="src/img/star.png" alt="">
+                                    <img src="src/img/star.png" alt="">
+                                    <img src="src/img/star.png" alt="">
+                                    <img src="src/img/star.png" alt="">
+                                </div>
+                                <div class="main-slider__text">
+                                    <span>“Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aut, ex doloribus natus voluptas enim quas eius fuga maxime cupiditate beatae unde eveniet deserunt maiores aliquam sint consequatur nihil magni?”</span>
+                                </div>
+                                <div class="main-slider__user">
+                                    <div class="main-slider__userImg">
+                                        <img src="src/img/userImg1.png" alt="">
+                                    </div>
+                                    <div class="main-slider__userBox">
+                                        <div class="main-slider__userName">
+                                            <p>Tudounaozi</p>
+                                        </div>
+                                        <div class="main-slider__link">
+                                            <a href="">Read the review on our discord</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="benefits">
+            <div class="container">
+                <div class="benefits-wrap">
+                    <div class="benefits-servers benefits-text">
+                        <img src="src/img/servers.png" alt="" class="benefits-img">
+                        <span><span class="benefits-bold">100k+</span>&nbsp servers use our unique scripts </span>
+                    </div>
+                    <div class="benefits-support benefits-text">
+                        <img src="src/img/discord.png" alt="">
+                        <span><span class="benefits-bold">12h/day Support</span>&nbsp on our discord</span>
+                    </div>
+                    <div class="benefits-reviews benefits-text">
+                        <img src="src/img/reviews.png" alt="">
+                        <span><span class="benefits-bold">200+</span>&nbsp positive reviews</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="releases">
+            <div class="container">
+                <div class="releases-title" style="margin-bottom: 50px;">
+                    <p>New releases</p>
+                </div>
+                <div class="releases-wrap">
+
+                    <div class="releases-item">
+                        <div class="releases-item__img">
+                            <img src="src/img/release1.png" alt="">
+                        </div>
+                        <div class="releases-item__info">
+                            <div class="releases-item__tags">
+                                <div class="releases-item__tag">
+                                    <p>ESX / QBCore</p>
+                                </div>
+                            </div>
+                            <div class="releases-item__title">
+                                <p>Garage system</p>
+                            </div>
+                            <div class="releases-item__text">
+                                <span>Neat garage system with variety of features</span>
+                            </div>
+                            <div class="releases-item__price">
+                                <p>$59.51</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="releases-item">
+                        <div class="releases-item__img">
+                            <img src="src/img/release2.png" alt="">
+                        </div>
+                        
+                        <div class="releases-item__info">
+                            <div class="releases-item__tags">
+                                <div class="releases-item__tag">
+                                    <p>Standalone</p>
+                                </div>
+                            </div>
+                            <div class="releases-item__title">
+                                <p>Tennis</p>
+                            </div>
+                            <div class="releases-item__text">
+                                <span>Challenge your friends or foes to a Tennis match!</span>
+                            </div>
+                            <div class="releases-item__price">
+                                <p>$26.45</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="releases-item">
+                        <div class="releases-item__img">
+                            <img src="src/img/release3.png" alt="">
+                        </div>
+                        <div class="releases-item__info">
+                            <div class="releases-item__tags">
+                                <div class="releases-item__tag">
+                                    <p>ESX / QBCore</p>
+                                </div>
+                                <div class="releases-item__tag">
+                                    <p>Sale !</p>
+                                </div>
+                            </div>
+                            <div class="releases-item__title">
+                                <p>Car Stickers/Decals</p>
+                            </div>
+                            <div class="releases-item__text">
+                                <span>74 unique stickers with the possibility of adding your own</span>
+                            </div>
+                            <div class="releases-item__price">
+                                <p>$59.51</p>
+                                <p class="releases-item__priceSale">$59.51</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,5 +295,7 @@
     <footer></footer>
     <script src="src/jquery-3.6.3.min.js"></script>
     <script src="src/js/main.js"></script>
+    <script src="src/js/slick.min.js"></script>
+    <script src="src/js/wow.min.js"></script>
 </body>
 </html>

@@ -8,6 +8,7 @@
 body
     background-color: #0C0C12
     font-family: 'Inter', sans-serif
+    color: #fff
 
 
 p
@@ -15,8 +16,14 @@ p
 
 .container
     max-width: 1470px
-    width: 96%
+    width: 92%
     margin: auto
+    @media (max-width: 1280px)
+        max-width: 1024px
+    @media (max-width: 1124px)
+        max-width: 820px
+    @media (max-width: 920px)
+        max-width: 650px
 
 button
     background-color: $orange2
@@ -80,12 +87,14 @@ a
             img
                 width: 100%
         &__links
+            @media (max-width: 1280px)
+                display: none
             a
                 margin-right: 30px
 
 
 .shrink-logo
-    width: 12%
+    width: 60%
     
 
 
@@ -94,6 +103,8 @@ a
         display: flex
         flex-direction: row-reverse
         align-items: center
+        @media (max-width: 1280px)
+            display: none
         a
             margin-left: 30px
         &__button
@@ -128,6 +139,33 @@ a
     font-size: 12px
 
 
+.header-hamburger__button
+    background: none
+    border: none
+    cursor: pointer
+    display: flex
+    flex-direction: column
+    gap: 7px
+    @media (min-width: 1280px)
+        display: none
+
+.hamburger-line1
+    height: 2px
+    width: 35px
+    background-color: $orange2
+
+.hamburger-line2
+    height: 2px
+    width: 35px
+    background-color: $orange2
+
+.hamburger-line3
+    height: 2px
+    width: 25px
+    background-color: $orange2
+
+
+
 
 
 
@@ -135,30 +173,55 @@ a
                                     //main
 
 .main-wrap
-    position: absolute
+    position: relative
     color: #fff
     margin-top: 200px
+    @media (min-width: 1280px)
+        display: flex
+    @media (max-width: 920px)
+        margin-top: 150px
 
 
 .main-info__bestTag
     position: absolute
     top: -25px
     left: 340px
+    @media (max-width: 920px)
+        top: -25px
+        left: 147px
+        img
+            width: 75%
     
+
+
 .main-info__sprayTag
     position: absolute
     top: 30px
     left: 264px
+    @media (max-width: 920px)
+        top: 18px
+        left: 130px
+        img
+            width: 50%
+    
+
+
 
 .main
-    height: 5000px
     &-info
+        @media (min-width: 1280px)
+            width: 50%
+        @media (max-width: 1280px)
+            margin-bottom: 100px
         &__title
             margin-bottom: 20px
             span
                 font-size: 60px
                 line-height: 70px
                 font-weight: 700
+                @media (max-width: 920px)
+                    font-size: 30px
+                    line-height: 40px
                 
         &__subtitle
             margin-bottom: 48px
@@ -166,14 +229,226 @@ a
                 font-size: 18px
                 line-height: 24px
                 font-weight: 400
+                @media (max-width: 920px)
+                    font-size: 14px
         &__button
             color: #fff
             font-weight: 700
             font-size: 18px
             cursor: pointer
+            @media (max-width: 920px)
+                font-size: 14px
             &:hover
                 transition: 0.2s
                 background: #CA8C31
                 
 
     
+.main-slider__item
+    padding: 40px
+    background-color: #252636
+    border-radius: 12px
+    margin: 0px 20px 0px 20px
+    @media (max-width: 1280px)
+        margin: 0px 150px 0px 150px
+    @media (max-width: 920px)
+        margin: 0px 50px 0px 50px
+    @media (max-width: 522px)
+        margin: 0px 15px 0px 15px
+
+.main-slider__itemBox
+    &::after
+        content: ''
+        background-color: #1D1E2B
+        position: relative
+        display: flex
+        margin: auto
+        border-radius: 0px 0px 10px 10px
+        height: 15px
+        width: 80%
+        bottom: 0px
+        @media (max-width: 1280px)
+            width: 60%
+       
+        
+        
+
+.main
+    &-slider
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        @media (min-width: 1280px)
+            top: 50px
+            width: 50%
+        &__stars
+            margin-bottom: 20px
+            display: flex
+        &__text
+            max-width: 450px
+            margin-bottom: 25px
+            line-height: 30px
+            font-size: 22px
+            font-style: italic
+        &__user
+            display: flex
+        &__userImg
+            margin-right: 15px
+        &__userName
+            font-size: 14px
+            font-weight: 600
+            margin-bottom: 7px
+        &__link
+            font-size: 12px
+            color: #BEBEC3
+
+
+
+.main-slider__arrows
+    display: flex
+    justify-content: center
+    position: relative
+    gap: 20px
+    @media (min-width: 1280px)
+        bottom: 30px
+        left: 28%
+    @media (max-width: 1280px)
+        margin-bottom: 30px
+
+.main-slider__prevArrow, .main-slider__nextArrow
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 40px
+    height: 40px
+    border: 1px solid #6D6D71
+    border-radius: 26px
+    cursor: pointer
+    &:hover
+        transition: 0.2s
+        background: #4d4d4d
+
+
+
+//////////////////////////////////////////////////////////////////////////
+                            //benefits
+
+    
+.benefits
+    margin-top: 80px
+    margin-bottom: 60px
+    &-wrap
+        justify-content: space-between
+        display: flex
+        border: 1px solid #6D6D71
+        border-radius: 12px
+        @media (max-width: 1280px)
+            flex-direction: column
+        
+
+.benefits-bold
+    font-weight: 700
+
+.benefits-text
+    display: flex
+    width: 33%
+    justify-content: center
+    padding: 13px 0px
+    @media (min-width: 1281px)
+        &:nth-child(-n + 2)
+            border-right: 1px solid #6D6D71
+    @media (max-width: 1280px)
+        width: 100%
+        &:nth-child(-n + 2)
+            border-bottom: 1px solid #6D6D71
+    @media (max-width: 920px)
+        padding: 6px 0px
+    span
+        display: flex
+        align-items: center
+        color: #fff
+        @media (max-width: 920px)
+            font-size: 14px
+
+
+////////////////////////////////////////////////////////////////////////////////
+                                    //releases
+        
+
+
+
+
+.releases
+    margin-bottom: 200px
+    &-title
+        font-size: 30px
+        font-weight: 700
+        @media (max-width: 920px)
+            font-size: 23px
+    &-wrap
+        display: flex
+        justify-content: space-between
+        gap: 18px
+        @media (max-width: 960px)
+            flex-wrap: wrap
+        @media (max-width: 671px)
+            justify-content: space-around
+    &-item
+        border: 1px solid #6D6D71
+        border-radius: 12px
+        width: 470px
+        min-height: 430px
+        
+        cursor: pointer
+        margin-bottom: 20px
+        @media (max-width: 1571px)
+            width: 430px
+        @media (max-width: 1442px)
+            width: 380px
+        @media (max-width: 1279px)
+            width: 430px       
+        @media (max-width: 960px)
+            width: 350px
+        @media (max-width: 960px)
+            width: 300px
+        @media (max-width: 671px)
+            width: 80%
+       
+        &__img
+            padding: 20px
+            img
+                width: 100%
+        &__info
+            padding: 0px 20px 20px 20px
+        &__tags
+            margin-bottom: 15px
+        &__tag
+            display: inline-block
+            color: #F2B440
+            font-size: 14px
+            font-weight: 700
+            padding: 4px 10px
+            background: rgba(226, 153, 44, 0.2)
+            border-radius: 6px
+            margin-bottom: 5px
+        &__title
+            font-size: 20px
+            font-weight: 700
+            margin-bottom: 6px
+        &__text
+            font-size: 14px
+            margin-bottom: 18px
+        &__price
+            display: flex
+            font-size: 16px
+            font-weight: 700
+            color: #88EA6F
+            p
+                margin-right: 10px
+        &__priceSale
+            color: #6DBB59
+            font-size: 14px
+            font-weight: 400
+            text-decoration-line: line-through
+        
